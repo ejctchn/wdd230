@@ -8,7 +8,7 @@ header
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: steelblue;
+    background-color: rgb(13, 62, 102);
     justify-self: center;
     justify-items: center; 
     align-items: center;
@@ -50,7 +50,7 @@ main
 }
 footer
 {
-    background-color: steelblue;
+    background-color: rgb(13, 62, 102);
     justify-self: center;
     
     padding-left: 7em;
