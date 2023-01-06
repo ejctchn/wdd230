@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap');
 
-body
+html
 {
-    display: grid;
+    font-family: "Kaushan Script", Helvetica, cursive;
 }
-#faceshot
+header
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,26 +14,39 @@ body
     align-items: center;
     padding: 1em;
     box-shadow: 5px 5px 30px;
-    
+    border-radius: 1em;
 }
-#faceshot img
+header img
 {
     box-shadow: 5px 5px 30px;
 }
-#faceshot h1
+header h1
 {
     margin: 1em;
     color: white;
     font-size: 2em;
 }
-h2
+body
+{
+    display: grid;
+}
+#description
+{
+    background-color: rgb(70, 130, 180, 0.3);
+    padding: 2em;
+    border-radius: 1em;
+    line-height: 1.5;
+}
+main
 {
     justify-self: center;
     text-decoration: underline;
-}
-nav
-{
-    justify-self: center;
+    font-family: Lobster, cursive;
+    border-style: double;
+    border-color: steelblue;
+    padding-left: 4em;
+    padding-right: 4em;
+    line-height: 2;
 }
 footer
 {
@@ -41,5 +55,10 @@ footer
     padding: 1em;
     padding-left: 9em;
     padding-right: 9em;
+    border-radius: 1em;
     box-shadow: 5px 5px 30px;
+}
+footer p
+{
+    color: white;
 }

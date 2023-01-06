@@ -48,7 +48,9 @@ switch(m)
 }
 
 //Finalize date format
-let final = `Last Updated: ${day} ${monthname} ${year}`;
-
+let cd = `Last Updated: ${day} ${monthname} ${year}`;
+let cr = `&copy; 2023 - Eli Cutchen - Idaho`
+//copyright line
+document.querySelector('#copyr').innerHTML = cr;
 //push date back to HTML
-document.querySelector('#updated').innerHTML = final;
+document.querySelector('#updated').innerHTML = cd;
