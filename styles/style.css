@@ -1,0 +1,45 @@
+
+body
+{
+    display: grid;
+}
+#faceshot
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: steelblue;
+    justify-self: center;
+    justify-items: center; 
+    align-items: center;
+    padding: 1em;
+    box-shadow: 5px 5px 30px;
+    
+}
+#faceshot img
+{
+    box-shadow: 5px 5px 30px;
+}
+#faceshot h1
+{
+    margin: 1em;
+    color: white;
+    font-size: 2em;
+}
+h2
+{
+    justify-self: center;
+    text-decoration: underline;
+}
+nav
+{
+    justify-self: center;
+}
+footer
+{
+    background-color: steelblue;
+    justify-self: center;
+    padding: 1em;
+    padding-left: 9em;
+    padding-right: 9em;
+    box-shadow: 5px 5px 30px;
+}
