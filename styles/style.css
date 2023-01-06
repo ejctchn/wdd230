@@ -8,7 +8,7 @@ header
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(13, 62, 102) ;
+    background-color: rgb(13, 62, 102);
     justify-self: center;
     justify-items: center; 
     align-items: center;
@@ -61,5 +61,5 @@ footer
 footer p
 {
     color: white;
-    font-size: 1.3em ;
+    font-size: 1.3em;
 }
