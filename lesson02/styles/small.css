@@ -1,0 +1,79 @@
+
+html
+{
+    font-family: lobster, cursive;
+}
+main
+{
+    display: grid;
+}
+body
+{
+    padding: 0.2em;
+}
+header
+{
+    background-color: steelblue;
+    border-radius: 1em;
+}
+h1
+{
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;
+    padding: 0.5em;
+}
+header h2
+{
+    padding-bottom: 0.5em;
+}
+h2
+{
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    background-color: steelblue;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+#first
+{
+    border-style: double;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+#second
+{
+    border-style: double;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+#third
+{
+    border-style: double;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+img
+{
+    width: 100%;
+}
+a
+{
+    display: block;
+    padding: 1em;
+}
+footer
+{
+    display: grid;
+    background-color: steelblue;
+    border-radius: 1em;
+}
+footer p
+{
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    justify-self: center;
+    justify-items: center; 
+    align-items: center;
+}
