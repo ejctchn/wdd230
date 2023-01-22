@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap');
+
+html
+{
+    font-family: lobster, cursive;
+    color: white;
+}
+nav
+{
+    background-color: #BB7E5D;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+a:hover
+{
+    background-color: #3C1518;
+    color: #BB7E5D;
+}
+a
+{
+    padding: 1em;
+    color: white;
+    font-size: 1.5em;
+    font-family: "Kaushan Script", Helvetica, sans-serif;
+}
+#active
+{
+    background-color: #3C1518;
+}
+main
+{
+    background-color: #3C1518;
+    padding: 1em;
+    text-align: center;
+}
+footer
+{
+    background-color: #BB7E5D;
+    display: flex;
+    justify-content: center;
+}
+footer p
+{
+    padding: 1em;
+    font-size: 1.5em;
+    font-family: "Kaushan Script";
+}
+
