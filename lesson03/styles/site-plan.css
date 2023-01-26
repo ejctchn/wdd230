@@ -177,3 +177,15 @@ footer p
     font-family: "Kaushan Script";
     color: white;
 }
+@media only screen and (max-width: 700px)
+{
+    nav
+    {
+        display: block;
+    }
+    a
+    {
+        display: block;
+        text-align: center;
+    }
+}
