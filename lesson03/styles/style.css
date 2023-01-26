@@ -23,6 +23,7 @@ a
     color: white;
     font-size: 1.5em;
     font-family: "Kaushan Script", Helvetica, sans-serif;
+    text-decoration: none;
 }
 #active
 {
@@ -47,3 +48,15 @@ footer p
     font-family: "Kaushan Script";
 }
 
+@media only screen and (max-width: 700px)
+{
+    nav
+    {
+        display: block;
+    }
+    a
+    {
+        display: block;
+        text-align: center;
+    }
+}
