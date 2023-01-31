@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap');
+
+/* set width of page */
+html
+{
+    width: 100%;
+    font-family: Lobster, cursive;
+    color: white;
+    z-index: 0;
+}
+/* top of page */
+header
+{
+    background-color: #BB7E5D;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+header h1
+{
+    font-size: 1.7em;
+    grid-column: 2/3;
+    grid-row: 1;
+}
+h1, h2
+{
+    font-weight: normal;
+}
+#chamber_header
+{
+    font-size: 1.3em;
+    padding-top: 2.2em;
+}
+#date
+{
+    background-color: #DBB68F;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    grid-row: 2;
+    grid-column: 1/5;
+    
+}
+a
+{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: normal;
+}
+a:hover
+{
+    background-color: #3C1518;
+    color: #BB7E5D;
+}
+#toggleButton
+{
+    float: right;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem;
+}
+.navigation
+{
+    grid-column: 4;
+    grid-row: 1;
+}
+.navigation li:first-child
+{
+    display: block;
+}
+.navigation li
+{
+    display: none;
+}
+.social
+{
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 1;
+    z-index: 1;
+}
+.social a
+{
+    height: 10px;
+    width: 10px;
+}
+.social a:hover
+{
+    background-color: rgb(0,0,0,0);
+}
+
+/* for opening the menu */
+.responsive
+{
+    background-color: rgb(60, 21, 24, .6);
+    position: absolute;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    z-index: 2;
+    width: 100%;
+}
+.responsive li
+{
+    display: block;
+    padding: .5em;
+    text-align: center;
+    margin-top: 4em;
+}
+.navigation li:first-child
+{
+    margin: 0;
+}
+
+/* middle of page */
+main
+{
+    background-color: #3C1518;
+    padding-bottom: 1em;
+}
+main img
+{
+    width: 450px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+p
+{
+    font-family: "Kaushan Script", Helvetica, cursive;
+}
+img
+{
+    padding: 1rem;
+}
+section
+{
+    position: relative;
+}
+section h2
+{
+    position: absolute;
+    padding-left: 1em;
+    z-index: 1;
+}
+.spotl
+{
+    border-style: double;
+    border-color: #BB7E5D;
+}
+.spotl img:nth-of-type(3), .spotl h2:nth-of-type(3)
+{
+    display: none;
+}
+/* bottom of the page */
+footer
+{
+    text-align: center;
+    padding: 1rem;
+    background-color: #BB7E5D;
+    font-family: "Kaushan Script", Helvetica, cursive;
+}
+#address
+{
+    padding-bottom: 1em;
+    border-style: double;
+}
+#name
+{
+    font-weight: bold;
+}
+#contact_info
+{
+    padding: 1em;
+}
+footer a
+{
+    font-size: 1em;
+    padding: 0;
+}
+#more_info
+{
+    border-style: double;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+#join
+{
+    display: none;
+}

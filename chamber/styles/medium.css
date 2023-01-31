@@ -1,0 +1,108 @@
+@media only screen and (min-width: 32.5em)
+{
+    main
+    {
+        display: grid;
+        grid-template-rows: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    main img
+    {
+        
+        width: 600px;
+        height: 150px;
+    }
+    #hero
+    {
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    #news
+    {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    .spotl
+    {
+        grid-row: 3/4;
+        grid-column: 1/3;
+        width: 580px;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .spotl img
+    {
+        width: 250px;
+        object-fit: cover;
+    }
+    .spotl h2
+    {
+        margin-top: 1.5em;
+    }
+    #join
+    {
+        display: block;
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+    #event
+    {
+        grid-row: 5/6;
+        grid-column: 1/3;
+    }
+    #event img
+    {
+        width: 100%;
+    }
+    #weather
+    {
+        width: 100%;
+        grid-row: 5/6;
+        grid-column: 3/4;
+    }
+    #weather img
+    {
+        width: 200px;
+        object-fit: cover;
+    }
+    #sl2
+    {
+        grid-column: 2/3;
+    }
+    
+    /* Footer */
+    footer
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #address
+    {
+        margin: auto;
+    }
+    #contact_info
+    {
+        margin: auto;
+    }
+    #more_info
+    {
+        grid-column: 1/4;
+    }
+    #copyr
+    {
+        display: inline;
+    }
+    #name
+    {
+        display: inline;
+    }
+    #project
+    {
+        display: inline;
+    }
+    #updated
+    {
+        display: block;
+    }
+}

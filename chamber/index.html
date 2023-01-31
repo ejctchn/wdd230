@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce for Table Top, Kansas">
+    <title>Table Top Chamber of Commerce</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body onload="loadDate()">
+    <header>
+        <img src="images/logo.png" alt="Table Top Chamber Logo" width="100px" height="100px">
+        <h1 id="tt_header">Table Top</h1>
+        <h1 id="chamber_header">Chamber of Commerce</h1>
+        <div class="social">
+            <a href="facebook.com">
+                <img src="images/facebook.png" alt="Facbook Logo" width="40px" height="40px">
+            </a>
+            <a href="linkedin.com">
+                <img src="images/linkedin.png" alt="LinkedIn Logo" width="40px" height="40px">
+            </a>
+        </div>
+        <div id="date"></div>
+        <nav class="navigation">
+            <ul>
+                <li><a id="toggleButton" href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Table Top Chamber</h2>
+            <img src="https://unsplash.it/900/500" alt="Hero image">
+        </section>
+        <section id="event">
+            <h2>Event</h2>
+            <img src="https://unsplash.it/900/150" alt="Event Photo">
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <img src="https://unsplash.it/900/150" alt="Weather Photo">
+        </section>
+        <section id="news">
+            <h2>News Release</h2>
+            <img src="https://unsplash.it/900/150" alt="News Release Photo">
+        </section>
+        <section id="join">
+            <h2>Join</h2>
+            <img src="https://unsplash.it/900/150" alt="Join Photo">
+        </section>
+        <section class="spotl">
+            <h2 id="sl1">Spotlight 1</h2>
+            <img src="https://unsplash.it/450/150" alt="Spotlight One Photo">
+            <h2 id="sl2">Spotlight 2</h2>
+            <img src="https://unsplash.it/450/150" alt="Spotlight Two Photo">
+            <h2 id="sl3">Spotlight 3</h2>
+            <img src="https://unsplash.it/450/150" alt="Spotlight Three Photo">
+        </section>
+    </main>
+    <footer> 
+        <img src="images/logo.png" alt="Table Top Logo" width="200px" height="200px">
+        <div id="address">
+            <p>Table Top Chamber of Commerce</p>
+            <p>123 Peach Rd</p>
+            <p>Table Top, Kansas</p>
+            <a href="https://goo.gl/maps/j1ecgssD9FecPGkr7">&#9906 Map</a>
+        </div>
+        <div id="contact_info">
+            <a href="mailto:info@ttchamber.com">info@ttchamber.com</a>
+            <p>(444) 444-4444</p>
+        </div>
+        <div id="more_info">
+            <p id="copyr"></p>
+            <p id="name">|  Eli Cutchen  |</p>
+            <p id="project">WDD 230 Project</p>
+            <p id="updated"></p>
+        </div>
+    </footer>
+    <script src="scripts/dates.js"></script>
+</body>
+</html>

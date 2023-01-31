@@ -1,0 +1,100 @@
+@media only screen and (min-width: 65em)
+{
+    .navigation
+    {
+        grid-column: 2/4;
+    }
+    .navigation li:first-child
+    {
+        display: none;
+    }
+    .navigation li
+    {
+        display: inline;
+    }
+    header img
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #tt_header
+    {
+        display: flex;
+        grid-column: 1/3;
+        justify-content: center;
+        margin-right: 5em;
+    }
+    #chamber_header
+    {
+        display: flex;
+        grid-column: 1/3;
+        justify-content: center;
+        margin-right: 3em;
+    }
+    .social
+    {
+        grid-column: 4/5;
+    }
+    main
+    {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+    }
+    #event
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #event img
+    {
+        width: 200px;
+    }
+    #hero
+    {
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+    #hero img
+    {
+        height: 100%;
+    }
+    .spotl img:nth-of-type(3), .spotl h2:nth-of-type(3)
+    {
+        display: block;
+    }
+    .spotl
+    {
+        display: block;
+        width: 165px;
+        grid-column: 5/6;
+        grid-row: 1/4;
+    }
+    .spotl img
+    {
+        width: 150px;
+        padding-right: 1em;
+    }
+    #weather
+    {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    #join
+    {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    #join img
+    {
+        width: 200px;
+    }
+    #news
+    {
+        grid-row: 3/4;
+        grid-column: 2/4;
+    }
+    #more_info
+    {
+        padding-top: 1em;
+    }
+}

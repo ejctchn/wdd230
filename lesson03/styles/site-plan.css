@@ -7,7 +7,7 @@ Fonts are separated by a & */
 :root 
 {
   /* change the values below to your colors from your palette */
-  --primary-color: #BB7E5D   ;
+  --primary-color: #BB7E5D;
   --secondary-color: #7768AE ;
   --accent1-color: #DBB68F;
   --accent2-color: #3C1518;
@@ -186,6 +186,6 @@ footer p
     a
     {
         display: block;
-        text-align: center    ;
+        text-align: center;
     }
 }
