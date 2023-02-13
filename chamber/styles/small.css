@@ -7,6 +7,7 @@ html
     font-family: Lobster, cursive;
     color: white;
     z-index: 0;
+    background-color: #3C1518;
 }
 /* top of page */
 header
@@ -15,6 +16,7 @@ header
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    border-radius: 1em;
 }
 header h1
 {
@@ -39,7 +41,7 @@ h1, h2
     padding: 1rem;
     grid-row: 2;
     grid-column: 1/5;
-    
+    border-radius: 1em;
 }
 a
 {
@@ -48,11 +50,16 @@ a
     text-decoration: none;
     padding: 1rem;
     font-weight: normal;
+    border-radius: 1em;
+    opacity: 100%;
+    transition: transform .2s;
 }
 a:hover
 {
     background-color: #3C1518;
     color: #BB7E5D;
+    zoom: 1em;
+    transform: scale(1.2);
 }
 #toggleButton
 {
@@ -63,7 +70,7 @@ a:hover
 }
 .navigation
 {
-    grid-column: 4;
+    grid-column: 4/5;
     grid-row: 1;
 }
 .navigation li:first-child
@@ -76,20 +83,35 @@ a:hover
 }
 .social
 {
-    display: flex;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column: 3/4;
     grid-row: 1;
     z-index: 1;
 }
 .social a
 {
-    height: 10px;
-    width: 10px;
+    width: 50px;
+    height: 50px;
+    grid-column: 2;
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+    transition: transform .2s;
 }
 .social a:hover
 {
     background-color: rgb(0,0,0,0);
+    transform: scale(1.2);
+
 }
+.social img
+{
+    padding: 0;
+}
+
 
 /* for opening the menu */
 .responsive
@@ -116,8 +138,8 @@ a:hover
 /* middle of page */
 main
 {
-    background-color: #3C1518;
     padding-bottom: 1em;
+    max-width: 490px;
 }
 main img
 {
@@ -125,6 +147,21 @@ main img
     height: 150px;
     object-fit: cover;
     display: block;
+    opacity: 60%;
+    border-radius: 20%;
+}
+main a
+{
+    position: absolute;
+    z-index: 2;
+    width: 410px;
+    height: 120px;
+    justify-self: center;
+    align-self: center;
+}
+main a:hover
+{
+    background-color: rgb(0,0,0,0);
 }
 p
 {
@@ -144,12 +181,160 @@ section h2
     padding-left: 1em;
     z-index: 1;
 }
+#hero
+{
+    display: grid;
+}
+#hero h2
+{
+    justify-self: center;
+}
+#hero a
+{
+    position: absolute;
+    justify-self: right;
+    top: 100px;
+    right: 30px;
+    z-index: 1;
+    width: fit-content;
+    height: fit-content;
+}
+#hero a:hover
+{
+    background-color: #3C1518;
+}
+#event
+{
+    display: grid;
+    transition: transform .2s;
+}
+#event:hover
+{
+    transform: scale(1.1);
+}
+#rc
+{
+    justify-self: center;
+    top: 0;
+}
+#ep
+{
+    position: absolute;
+    justify-self: center;
+    top: 30px;
+}
+#event p
+{
+    position: absolute;
+    justify-self: center;
+    top: 90px;
+    z-index: 1;
+}
+#event a
+{
+    position: absolute;
+    z-index: 2;
+    width: 410px;
+    height: 120px;
+    justify-self: center;
+    align-self: center;
+}
+#weather
+{
+    border-radius: 1em;
+    max-width: 450px;
+    justify-items: center;
+    padding-left: 1rem;
+}
+#weather a
+{
+    width: 450px;
+}
+#weather a:hover
+{
+    transform: scale(1.1);
+}
+#news
+{
+    display: grid;
+    transition: transform .2s;
+}
+#news:hover
+{
+    transform: scale(1.1);
+}
+#news p
+{
+    z-index: 1;
+    position: absolute;
+    justify-self: center;
+    padding: 3em;
+    top: 30px;
+}
 .spotl
 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     border-style: double;
     border-color: #BB7E5D;
 }
-.spotl img:nth-of-type(3), .spotl h2:nth-of-type(3)
+.spotl h2:first-child
+{
+    justify-self: center;
+    grid-row: 1;
+}
+.spotl h2
+{
+    justify-self: center;
+    grid-row: 2;
+}
+.spotl p
+{
+    position: absolute;
+}
+#sl11
+{
+    justify-self: center;
+    bottom: 140%;
+}
+#slp1
+{
+    z-index: 1;
+    justify-self: center;
+    top: 30%;
+}
+#slp11
+{
+    z-index: 1;
+    justify-self: center;
+    top: 35%;
+    border-style: double;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+#sl22
+{
+    position: absolute;
+    top: 15%;
+}
+#slp2
+{
+    z-index: 1;
+    justify-self: center;
+    top: 80%;
+}
+#slp22
+{
+    z-index: 1;
+    justify-self: center;
+    top: 85%;
+    border-style: double;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.spotl img:nth-of-type(3), .spotl h2:nth-of-type(5)
 {
     display: none;
 }
@@ -160,6 +345,7 @@ footer
     padding: 1rem;
     background-color: #BB7E5D;
     font-family: "Kaushan Script", Helvetica, cursive;
+    border-radius: 1em;
 }
 #address
 {
@@ -177,7 +363,7 @@ footer
 footer a
 {
     font-size: 1em;
-    padding: 0;
+    padding: .5em;
 }
 #more_info
 {
