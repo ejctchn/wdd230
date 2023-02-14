@@ -15,6 +15,11 @@
     {
         display: none;
     }
+    .navigation ul
+    {
+        width: 500px;
+        text-align: right;
+    }
     .navigation li
     {
         display: inline;
@@ -51,8 +56,8 @@
     {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 250px;
-        width: 250px;
+        height: 230px;
+        width: 230px;
     }
     #event a
     {
@@ -72,79 +77,165 @@
     {
         height: 100%;
     }
-    .spotl img:nth-of-type(3), .spotl h2:nth-of-type(3)
+    #hero a
     {
-        display: block;
+        top: 85%;
+        right: 15%;
+    }
+    .spotl img:nth-of-type(3), .spotl h2:nth-of-type(5)
+    {
+        display: flex;
     }
     .spotl
     {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        width: 170px;
+        width: 230px;
         grid-column: 5/6;
         grid-row: 1/4;
+        margin-top: 1em;
     }
     .spotl img
     {
-        width: 150px;
+        width: 200px;
         padding-right: 1em;
     }
     #sl1
     {
         height: 50px;
         text-align: center;
-        right: 5%;
+        right: 10%;
     }
     #sl11
     {
-        top: 30%;
-        
+        top: 13%;
     }
     #slp1
     {
-        top: 68%;
+        top: 48%;
     }
     #slp11
     {
-        top: 75%;
+        top: 55%;
+        width: 200px;
     }
     #sl2
     {
+        width: 150px;
         grid-row: 2/3;
+        right: 40px;
     }
     #sl22
     {
         grid-row: 2/3;
+        width: 200px;
+        right: 30px;
+    }
+    #slp2
+    {
+        display: inline;
+        grid-row: 2/3;
+        right: 50px;
+        top: 50%;
+    }
+    #slp22
+    {
+        grid-row: 2/3;
+        width: 200px;
+        right: 30px;
+        top: 56%;
+    }
+    #sl3
+    {
+        grid-row: 3/4;
+        left: 10%;
+    }
+    #sl33
+    {
+        grid-row: 3/4;
+        top: 15%;
+        left: 5%;
+    }
+    #slp3
+    {
+        z-index: 1;
+        grid-row: 3/4;
+        right: 65px;
+        top: 47%;
+    }
+    #slp33
+    {
+        z-index: 1;
+        grid-row: 3/4;
+        width: 200px;
+        right: 30px;
+        top: 54%;
+        border-style: double;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
     }
     #weather
     {
         grid-row: 2/4;
         grid-column: 1/2;
         width: 200px;
-        height: auto;
+        height: 500px;
+        bottom: 18%;
+        object-fit: cover;
     }
     #weather a
     {
-        object-fit: cover;
         width: 200px;
         height: 400px;
     }
     #join
     {
+        width: 200px;
+        height: 200px;
         grid-row: 3/4;
         grid-column: 1/2;
+        top: 33%;
     }
     #join img
     {
-        width: 200px;
+        width: 100%;
+        height: 100%;
+    }
+    #join a
+    {
+        margin: 0;
+        left: 25%;
+    }
+    #join p
+    {
+        left: 10%;
     }
     #news
     {
         grid-row: 3/4;
         grid-column: 2/4;
-        height: 250px;
+        height: 330px;
         width: 600px;
+        top: 19%;
+    }
+    #news p
+    {
+        margin: 0;
+        right: 20%;
+        top: 40%;
+    }
+    #news img
+    {
+        width: 100%;
+        height: 250px;
+    }
+    #news a
+    {
+        width: 550px;
+        height: 220px;
+        bottom: 20%;
     }
     #more_info
     {

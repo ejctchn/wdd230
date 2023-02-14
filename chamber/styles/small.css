@@ -59,7 +59,7 @@ a:hover
     background-color: #3C1518;
     color: #BB7E5D;
     zoom: 1em;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #toggleButton
 {
@@ -210,7 +210,7 @@ section h2
 }
 #event:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 #rc
 {
@@ -252,7 +252,7 @@ section h2
 }
 #weather a:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 #news
 {
@@ -261,7 +261,7 @@ section h2
 }
 #news:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 #news p
 {
