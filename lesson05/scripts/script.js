@@ -4,7 +4,7 @@ const input = document.querySelector('#favchap');
 
 btn.addEventListener("click", function() 
 { 
-    if(input.value.length = 0)
+    if(input.value.length == 0)
     {
         alert("There was nothing entered in text box. Please enter a book and chapter");
     }
@@ -16,6 +16,8 @@ btn.addEventListener("click", function()
         deleteB.textContent = '❌';
         li.appendChild(deleteB);
         list.appendChild(li);
+        
+        document.getElementById('favchap').value = "";
 
         deleteB.addEventListener("click", function()
         {
