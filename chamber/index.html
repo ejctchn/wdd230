@@ -13,7 +13,7 @@
 </head>
 <body onload="loadDate()">
     <header>
-        <img src="images/logo.png" alt="Table Top Chamber Logo" width="100" height="100">
+        <img src="images/logo100.webp" alt="Table Top Chamber Logo" width="100" height="100">
         <h1 id="tt_header">Table Top</h1>
         <h1 id="chamber_header">Chamber of Commerce</h1>
         <div class="social">
@@ -39,7 +39,12 @@
         <section id="hero">
             <h2>Table Top Chamber</h2>
             <a href="#">Join the Chamber</a>
-            <img src="images/chamber.jpeg" alt="Hero image">
+            <picture>
+                <source srcset="images/wdd230-medium.jpg" media="(min-width: 45em)
+                and (max-width: 73.99em)">
+                <source srcset="images/wdd230-org.jpg" media="(min-width: 74em)">
+                <img src="images/wdd230-small.jpg" alt="Hero image">
+            </picture>
         </section>
         <section id="event">
             <a href="#"></a>
@@ -49,20 +54,23 @@
             <img src="images/d_kong.png" alt="Event Photo">
         </section>
         <section id="weather">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/43d82n111d79/rexburg/" data-label_1="REXBURG" data-label_2="WEATHER" data-theme="original" data-basecolor="#BB7E5D" data-highcolor="#3C1518" >REXBURG WEATHER</a>
+            <h2>Weather</h2>
+            <span id="temp">-6</span>
+            <span id="windspeed">6</span>
+            <span id="windchill"></span>
         </section>
         <section id="news">
-            <p>
+            <div>
                 James Test helped a man cross the street yesterday. 
                 This good deed has ignited a fierce debate over 
                 inheritance tax, with the... Read More
-            </p>
+            </div>
             <a href="#"></a>
             <img src="images/news.jpeg" alt="News Release Photo">
         </section>
         <section id="join">
             <a href="#"> Join Us!</a>
-            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+            <div>Discover how to join the chamber of commerce and how it will benefit your organization!</div>
             <img src="images/chamber.jpeg" alt="Join Photo">
         </section>
         <section class="spotl">
@@ -89,7 +97,7 @@
             <p>Table Top Chamber of Commerce</p>
             <p>123 Peach Rd</p>
             <p>Table Top, Kansas</p>
-            <a href="https://goo.gl/maps/j1ecgssD9FecPGkr7">&#9906; Map</a>
+            <a href="https://goo.gl/maps/j1ecgssD9FecPGkr7">&#128205; Map</a>
         </div>
         <div id="contact_info">
             <a href="mailto:info@ttchamber.com">info@ttchamber.com</a>
@@ -103,6 +111,6 @@
         </div>
     </footer>
     <script src="scripts/dates.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

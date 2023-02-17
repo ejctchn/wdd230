@@ -8,6 +8,7 @@ html
     color: white;
     z-index: 0;
     background-color: #3C1518;
+    min-width: 480px;
 }
 /* top of page */
 header
@@ -120,7 +121,7 @@ a:hover
     position: absolute;
     grid-column: 1/4;
     grid-row: 1/2;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
 }
 .responsive li
@@ -138,6 +139,7 @@ a:hover
 /* middle of page */
 main
 {
+    margin: auto;
     padding-bottom: 1em;
     max-width: 490px;
 }
@@ -241,18 +243,44 @@ section h2
 }
 #weather
 {
+    margin-left: 1em;
+    background-color: #BB7E5D;
     border-radius: 1em;
-    max-width: 450px;
-    justify-items: center;
+    height: 150px;
+    width: 420px;
     padding-left: 1rem;
+    text-align: center;
 }
-#weather a
+#weather h2
 {
-    width: 450px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    position: static;
 }
-#weather a:hover
+#temp
 {
-    transform: scale(1.05);
+    width: 400px;
+    display: inline;
+    font-size: 1.5em;
+}
+#windspeed
+{
+    border-style: double;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 380px;
+    margin-top: 1em;
+    display: block;
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+#windchill
+{
+    display: block;
+    width: 400px;
+    font-size: 1.2em;
 }
 #news
 {
@@ -263,13 +291,14 @@ section h2
 {
     transform: scale(1.05);
 }
-#news p
+#news div
 {
     z-index: 1;
     position: absolute;
     justify-self: center;
     padding: 3em;
     top: 30px;
+    font-size: 1.2em;
 }
 .spotl
 {
@@ -334,7 +363,7 @@ section h2
     border-left: none;
     border-right: none;
 }
-.spotl img:nth-of-type(3), .spotl h2:nth-of-type(5)
+.spotl img:nth-of-type(3), .spotl h2:nth-of-type(5), .spotl h2:nth-of-type(6), .spotl p:nth-of-type(5), .spotl p:nth-of-type(6)
 {
     display: none;
 }
@@ -351,6 +380,11 @@ footer
 {
     padding-bottom: 1em;
     border-style: double;
+    display: grid;
+}
+#contact_info
+{
+    display: grid;
 }
 #name
 {
@@ -362,8 +396,15 @@ footer
 }
 footer a
 {
+    display: block;
     font-size: 1em;
     padding: .5em;
+    width: 200px;
+    justify-self: center;
+}
+footer a:hover
+{
+    transform: scale(1.2);
 }
 #more_info
 {
