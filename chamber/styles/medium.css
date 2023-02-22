@@ -223,4 +223,15 @@
     {
         display: block;
     }
+
+    /* discover */
+    #discover
+    {
+        max-width: 600px;
+    }
+    .fade:hover
+    {
+        background-color: #DBB68F;
+        transform: scale(1.1);
+    }
 }

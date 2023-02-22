@@ -417,3 +417,24 @@ footer a:hover
 {
     display: none;
 }
+
+/* discover page */
+#discover
+{
+    display: block;
+    max-width: 500px;
+    text-align: center;
+}
+.fade[data-src]
+{
+    filter: blur(0.8em);
+}
+.fade
+{
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn
+{
+    0% { opacity: 0; }
+    100% { opacity: 0.6; }
+}
