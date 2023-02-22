@@ -425,6 +425,14 @@ footer a:hover
     max-width: 500px;
     text-align: center;
 }
+#message
+{
+    font-size: 1.2em;
+}
+.desc
+{
+    font-size: 1.2em;
+}
 .fade[data-src]
 {
     filter: blur(0.8em);
