@@ -1,0 +1,22 @@
+html
+{
+    margin: auto;
+    max-width: 400px;
+}
+h1
+{
+    text-align: center;
+    background-color: rgba(163, 163, 163, 0.5);
+    padding: 1em;
+}
+table, th, td
+{
+    margin-top: -20px;
+    padding: .5em;
+    background-color:rgba(163, 163, 163, 0.5);
+    width: 400px;
+}
+tr:nth-of-type(even)
+{
+    background-color: gray;
+}
