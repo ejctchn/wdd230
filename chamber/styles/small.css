@@ -34,7 +34,7 @@ h1, h2
     font-size: 1.3em;
     padding-top: 2.2em;
 }
-#date
+.date
 {
     background-color: #DBB68F;
     font-size: 1.5rem;
@@ -68,6 +68,11 @@ a:hover
     font-size: 2rem;
     text-decoration: none;
     padding: 1rem;
+}
+#active
+{
+    text-decoration: overline;
+    background-color: rgb(60,21,24,0.9);
 }
 .navigation
 {
@@ -117,7 +122,7 @@ a:hover
 /* for opening the menu */
 .responsive
 {
-    background-color: rgb(60, 21, 24, .6);
+    background-color: rgb(219,182,143,0.7);
     position: absolute;
     grid-column: 1/4;
     grid-row: 1/2;
@@ -418,7 +423,7 @@ footer a:hover
     display: none;
 }
 
-/* discover page */
+/* discover */
 #discover
 {
     display: block;
@@ -445,4 +450,53 @@ footer a:hover
 {
     0% { opacity: 0; }
     100% { opacity: 0.6; }
+}
+
+/* join */
+.join_boxes > *
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 0.5em;
+    width: 100%;
+    font-family: "Kaushan Script", Helvetica, cursive;
+}
+#join-h2, .join_boxes
+{
+    padding: 1em;
+    max-width: 450px;
+    grid-column: 1/4;
+    width: 500px;
+}
+.join_boxes
+{
+    justify-items: right;
+    
+}
+table
+{
+    display: none;
+}
+td, th
+{
+    padding: 0.5em;
+}
+th
+{
+    background-color: rgb(60,21,24, 0.8);
+    font-weight: lighter;
+}
+tr:nth-child(even)
+{
+    background-color: rgb(60,21,24, 0.5);
+}
+.hidden_date
+{
+    display: none;
+}
+.join_boxes button
+{
+    margin: 0.5em;
+    cursor: pointer;
 }

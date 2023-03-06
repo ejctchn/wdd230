@@ -91,5 +91,6 @@ function loadDate()
     }
     let topdate = `${dayname}, ${day} ${monthname} ${year}`;
     //push date back to header
-    document.querySelector('#date').innerHTML = topdate;
+    document.querySelector('.date').innerHTML = topdate;
+    document.querySelector('.hidden_date').innerHTML = topdate;
 }
