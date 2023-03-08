@@ -17,6 +17,7 @@ main
     color: rgb(0, 4, 59);
     font-family: "Kaushan Script", Helvetica, cursive;
     gap: 10px;
+    
 }
 .card
 {
@@ -43,7 +44,7 @@ img
     background-color: #f1f1f1;
     cursor: pointer;
 }
-  .btn:hover 
+.btn:hover 
 {
     background-color: #ddd;
 }

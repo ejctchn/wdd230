@@ -7,6 +7,7 @@ function filterSelection(c)
   var x, i;
   x = document.getElementsByClassName("card");
   if (c == "all") c = "";
+
   // Add the "show" class
   for (i = 0; i < x.length; i++) 
   {
@@ -98,8 +99,8 @@ const displayProphets = (prophets) =>
 
             }
             //create elements for div 
+
             let card = document.createElement('section');
-            card.setAttribute('class', 'card show');
             let h2 = document.createElement('h2');
             let portrait = document.createElement('img');
             let bd = document.createElement('p');
@@ -110,6 +111,20 @@ const displayProphets = (prophets) =>
             let age = document.createElement('p');
             let b = new Date(`${p.birthdate}`);
             let calcAge = 0;
+
+            let serviceYears = parseInt(p.length);
+            if(serviceYears >= 10)
+            {
+              card.setAttribute('class', 'card serviceFilter');
+            }
+            else if(p.birthplace == "Idaho")
+            {
+              card.setAttribute('class', 'card bornIdahoFilter');
+            }
+            else
+            {
+              card.setAttribute('class', 'card');
+            }
             
             if(p.death == null)
             {
@@ -124,7 +139,7 @@ const displayProphets = (prophets) =>
                 calcAge = (diff / (1000 * 60 * 60 * 24 * 30.7 * 12)).toFixed(0);
             }
 
-            // show the prophet's full name
+            // show the prophet's full info
             h2.textContent = `${p.name} ${p.lastname}`;
             bd.textContent = `Date of Birth: ${p.birthdate}`;
             bp.textContent = `Place of Birth: ${p.birthplace}`;
