@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce for Table Top, Kansas">
-    <title>DISCOVER | Table Top Chamber</title>
+    <title>DIRECTORY | Table Top Chamber
+    </title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -28,28 +29,20 @@
         <nav class="navigation">
             <ul>
                 <li><a id="toggleButton" href="#" onclick="toggleMenu()">&#9776;</a></li>
-                <li><a id="active" href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a id="active" href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <h1 id="directTitle">Directory</h1>
+        <div id="fltrContain">
+            <button class="btn active" onclick="filterSelection('gridFilter')">Grid</button>
+            <button class="btn" onclick="filterSelection('listFilter')">List</button>
+        </div>
     </header>
-    <main id="discover">
-        <h1>Table Top: Table-ing Since 1853</h1>
-        <h1>Population: 15,853</h1>
-        <h1>Annual Growth: 0.58%</h1>
-        <div id="message"></div>
-        <picture><img class="fade" src="images/ph.png" data-src="images/floral.jpg" alt="Floral Art Photo"></picture>
-        <p class="desc">February's Business Spotlight of the Month is Floral Art! </p>
-        <picture><img class="fade" src="images/ph.png" data-src="images/lookout.jpg" alt="Spotlight CU Photo"></picture>
-        <p class="desc">January's Business Spotlight is Lookout Credit Union!</p>
-        <picture><img class="fade" src="images/ph.png" data-src="images/dinas.jpg" alt="Dina's Kitchen Ribbon Cutting"></picture>
-        <p class="desc">Dina's Kitchen Ribbon Cutting in December!</p>
-        <picture><img class="fade" src="images/ph.png" data-src="images/hotel.jpg" alt="Shoshone-Bannock Hotel Flyer"></picture>
-        <p class="desc">Join us for the Shoshone-Bannock Casino Hotel Business After Hours!</p>
-        <picture><img class="fade" src="images/ph.png" data-src="images/hockey.jpg" alt="Spud Kings Hockey Banner"></picture>
-        <p class="desc">Want to help us run the concessions for the Hockey Game this weekend?</p>
+    <main class="fade">
+        <div class="cards"></div>
     </main>
     <footer> 
         <img src="images/logo.png" alt="Table Top Logo" width="200" height="200">
@@ -71,8 +64,6 @@
         </div>
     </footer>
     <script src="scripts/dates.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="../scripts/lazyl.js"></script>
-    <script src="../scripts/visits.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>

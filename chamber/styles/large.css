@@ -285,4 +285,32 @@
     {
         height: 150px;
     }
+
+    /* directory */
+    /* list view */
+    .cards
+    {
+        margin: 1em;
+    }
+    .listFilter
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        margin: -0.5em;
+    }
+    .listFilter:nth-of-type(even)
+    {
+        background-color: #3C1518;
+    }
+    .listFilter p
+    {
+        display: inline;
+        margin: 1em;
+    }
+    .listFilter .businessName
+    {
+        display: inline;
+    }
+    
 }

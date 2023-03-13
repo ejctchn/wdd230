@@ -1,0 +1,76 @@
+{
+    "directory": [
+      {
+        "name": "BPU",
+        "address": "2115 S Vista Avenue, Table Top, KS 66012",
+        "phone": "913-342-9386",
+        "website": "https://www.bpu.com",
+        "imageurl": "https://z8ue7b.a2cdn1.secureserver.net/wp-content/uploads/webpage-1.png",
+        "membership": 0
+      },
+      {
+        "name": "Burns McDonnell",
+        "address": "390 Charter Street, Table Top, KS 66012",
+        "phone": "913-518-7411",
+        "website": "https://www.burnsmcd.com",
+        "imageurl": "https://z8ue7b.a2cdn1.secureserver.net/wp-content/uploads/website-1-1.png",
+        "membership": 1
+      },
+      {
+        "name": "RLM Underground",
+        "address": "4578 Spirit Drive, Table Top, KS 66012",
+        "phone": "913-316-0078",
+        "website": "https://rlmus.com",
+        "imageurl": "https://z8ue7b.a2cdn1.secureserver.net/wp-content/uploads/RLM-Underground-logo-no-background-1.png",
+        "membership": 2
+      },
+      {
+        "name": "Providence Medical Center",
+        "address": "701 Broadway Street, Table Top, KS 66012",
+        "phone": "913-517-4556",
+        "website": "https://providencekc.com",
+        "imageurl": "https://z8ue7b.a2cdn1.secureserver.net/wp-content/uploads/website-2-1.png",
+        "membership": 3
+      },
+      {
+        "name": "JeDunn Construction",
+        "address": "4495 Hedge Street, Table Top, KS 66012",
+        "phone": "913-554-3509",
+        "website": "https://dmi-kc.com",
+        "imageurl": "https://z8ue7b.a2cdn1.secureserver.net/wp-content/uploads/2018/05/je-dunn.png",
+        "membership": 0
+      },
+      {
+        "name": "Empire Cleaning",
+        "address": "3503 Golden Ridge Road, Table Top, KS 66012",
+        "phone": "913-293-3726",
+        "website": "https://empirekc.com/high-rise",
+        "imageurl": "https://z8ue7b.a2cdn1.secureserver.net/wp-content/uploads/Untitled-design-53.png",
+        "membership": 0
+      },
+      {
+        "name": "Mark One Electric",
+        "address": "4078 B Street, Table Top, KS 66012",
+        "phone": "913-525-2670",
+        "website": "https://www.markone.com",
+        "imageurl": "https://z8ue7b.a2cdn1.secureserver.net/wp-content/uploads/website-5-1.png",
+        "membership": 0
+      },
+      {
+        "name": "Unified Government Kansas",
+        "address": "2777 Haul Road, Table Top, KS 66012",
+        "phone": "913-724-6847",
+        "website": "https://www.wycokck.org/Home",
+        "imageurl": "https://z8ue7b.a2cdn1.secureserver.net/wp-content/uploads/website-2.png",
+        "membership": 0
+      },
+      {
+        "name": "KC Blind All-Stars",
+        "address": "4489 Cottrill Lane, Table Top, KS 66012",
+        "phone": "913-427-4454",
+        "website": "https://www.kcblindallstars.org",
+        "imageurl": "https://z8ue7b.a2cdn1.secureserver.net/wp-content/uploads/KC-Blind-All-stars-website.png",
+        "membership": 0
+      }
+    ]
+  }
