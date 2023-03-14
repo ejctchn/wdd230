@@ -56,9 +56,13 @@
         </section>
         <section id="weather">
             <h2>Weather</h2>
-            <span id="temp">-6</span>
-            <span id="windspeed">6</span>
-            <span id="windchill"></span>
+            <h2 id="current-condition"></h2>
+            <div id="weathergrid">
+                <img src="" alt="" id="weather-icon">
+                <span id="current-temp"></span>
+                <span id="windspeed"></span>
+                <span id="windchill"></span>
+            </div>
         </section>
         <section id="news">
             <div>
@@ -112,7 +116,7 @@
         </div>
     </footer>
     <script src="scripts/dates.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather-api.js"></script>
     <script src="../scripts/lazyl.js"></script>
 </body>
 </html>

@@ -251,7 +251,7 @@ section h2
     margin-left: 1em;
     background-color: #BB7E5D;
     border-radius: 1em;
-    height: 150px;
+    height: 150pxpx;
     width: 420px;
     padding-left: 1rem;
     text-align: center;
@@ -263,28 +263,43 @@ section h2
     padding: 0;
     position: static;
 }
-#temp
+#weathergrid
 {
-    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em;
+}
+#weather-icon
+{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: inline;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    padding-right: 0.5em;
+    justify-self: right;
+}
+#current-temp
+{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 50px;
     display: inline;
     font-size: 1.5em;
 }
 #windspeed
 {
-    border-style: double;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    width: 380px;
-    margin-top: 1em;
-    display: block;
+    width: 150px;
     font-size: 1.2em;
     padding: 0.5em;
+    justify-self: right;
 }
 #windchill
 {
+    padding: 0.5em;
     display: block;
-    width: 400px;
+    width: 150px;
     font-size: 1.2em;
 }
 #news
