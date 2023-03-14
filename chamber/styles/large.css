@@ -193,29 +193,28 @@
     {
         grid-row: 2/4;
         grid-column: 1/2;
-        width: 180px;
+        width: 200px;
         height: 200px;
+    }
+    #weathergrid
+    {
+        margin-top: 1em;
     }
     #weather h2
     {
         width: 180px;
     }
-    #temp
+    #current-temp
     {
-        width: 180px;
         padding: 0;
-        padding-top: 1em;
     }
     #windspeed
     {
-        width: 165px;
         padding: 0;
-        padding-top: 1em;
     }
     #windchill
     {
-        padding-top: .5em;
-        width: 180px;
+        padding: 0;
     }
     #join
     {

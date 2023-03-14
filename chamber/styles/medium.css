@@ -156,24 +156,27 @@
         grid-row: 5/6;
         grid-column: 3/4;
     }
+    #weathergrid
+    {
+        margin: 0;
+    }
     #weather h2
     {
         width: 240px;
     }
-    #temp
+    #current-temp
     {
         display: block;
-        width: 220px;
         text-align: center;
-        padding: 1em;
+
     }
     #windspeed
     {
-        width: 220px;
+        width: 100px;
     }
     #windchill
     {
-        width: 240px;
+        width: 100px;
     }
     #sl2
     {

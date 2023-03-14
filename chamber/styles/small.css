@@ -249,9 +249,10 @@ section h2
 #weather
 {
     margin-left: 1em;
+    margin: 0;
     background-color: #BB7E5D;
     border-radius: 1em;
-    height: 150pxpx;
+    height: 150px;
     width: 420px;
     padding-left: 1rem;
     text-align: center;
@@ -259,15 +260,14 @@ section h2
 #weather h2
 {
     width: 400px;
-    margin: 0;
     padding: 0;
     position: static;
+    margin: 0;
 }
 #weathergrid
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1em;
 }
 #weather-icon
 {
