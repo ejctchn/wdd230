@@ -21,7 +21,7 @@ function getWindChill(windSpeed, currentTemp)
     }
     else
     {
-        return 35.74 + (.6215*currentTemp)-(35.75*(windSpeed**.16))+(.4275*currentTemp*(windSpeed**.16));
+        return `${(35.74 + (.6215*currentTemp)-(35.75*(windSpeed**.16))+(.4275*currentTemp*(windSpeed**.16))).toFixed(0)}°F`;
     }
 }
 
@@ -53,7 +53,7 @@ async function apiFetch()
 
 function displayResults(weatherData) 
 {
-    currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)} °F`;
+    currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}°F`;
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -61,7 +61,7 @@ function displayResults(weatherData)
     captionDesc.textContent = desc;
     let wc = getWindChill(weatherData.wind.speed, weatherData.main.temp);
     windSpeed.innerHTML = `Windspeed: ${weatherData.wind.speed.toFixed(0)} mph`;
-    windChill.innerHTML = `Windchill: ${wc.toFixed(0)} °F`;
+    windChill.innerHTML = `Windchill: ${wc}`;
   }
 
   apiFetch()

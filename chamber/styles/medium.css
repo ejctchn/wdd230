@@ -64,6 +64,10 @@
         grid-column: 2/3;
         grid-row: 1/2;
     }
+    #sl1
+    {
+        right: 15%;
+    }
     #sl11
     {
         z-index: 1;
@@ -120,6 +124,7 @@
     }
     #join div
     {
+        width: 550px;
         position: absolute;
         z-index: 1;
         text-align: center;
@@ -235,7 +240,7 @@
 
     /* join */
 
-    #join-h2
+    .join-h2
     {
         grid-row: 1/2;
         grid-column: 1/2;
@@ -258,10 +263,32 @@
         width: 500px;
         background-color: #DBB68F;
     }
+    .thankyou-h2
+    {
+        grid-row: 1/4;
+        grid-column: 1/4;
+    }
+    .thankyou-contact
+    {
+        grid-row: 4/6;
+        grid-column: 1/4;
+    }
     /* directory */
     /* list view */
     .listFilter
     {
         width: 500px;
+    }
+
+    /* Contact */
+    .q_h2
+    {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .q_boxes
+    {
+        grid-column: 1/4;
+        grid-row: 2/6;
     }
 }

@@ -28,36 +28,37 @@
         <nav class="navigation">
             <ul>
                 <li><a id="toggleButton" href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a id="active" href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contactus.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2 id="join-h2">
+        <h2 class="join-h2">
             Thank you for considering joining Table Top Chamber. 
             Please note that each new membership has a one-time fee of $50.
             If you have any questions, feel free to contact us at 555-CHAMBER (555-242-6237).
         </h2>
         <form action="thankyou.html" class="join_boxes">
-            <label for="f_name">First name:</label>
+            <label for="f_name">First name: *</label>
             <input id="f_name" name="f_name" type="text" placeholder="John" required>
 
-            <label for="l_name">Last name:</label>
+            <label for="l_name">Last name: *</label>
             <input id="l_name" name="l_name" type="text" placeholder="Doe" required>
 
             <label for="b_name">Business Name/Title:</label>
-            <input id="b_name" name="b_name" type="text" pattern="[a-zA-z]" placeholder="Best Business Number 1!">
+            <input id="b_name" name="b_name" type="text" pattern="[A-Za-z]" placeholder="Best Business Number 1!">
 
             <label for="pos_title">Business Position Title:</label>
-            <input id="pos_title" name="pos_title" type="text" pattern="[a-zA-z]" placeholder="Quality Assurance Manager">
+            <input id="pos_title" name="pos_title" type="text" pattern="[A-Za-z]" placeholder="Quality Assurance Manager">
 
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="text" pattern="[a-zA-z@.]" placeholder="email@example.com" required>
+            <label for="email">Email: *</label>
+            <input id="email" name="email" type="text" placeholder="email@example.com" required>
 
-            <label for="phone">Phone</label>
+            <label for="phone">Phone: *</label>
             <input id="phone" name="phone" type="tel" placeholder="123-123-1234" required>
 
             <label for="membership">Choose a Membership Level:</label>
@@ -73,7 +74,7 @@
             <label for="b_desc">Briefly Describe your Business</label>
             <textarea id="b_desc" name="b_desc" placeholder="Lorem ipsum dolor sit amet..."></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Join the Chamber!</button>
         </form>
         <table>
             <thead>
@@ -130,7 +131,6 @@
         </div>
     </footer>
     <script src="scripts/dates.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="../scripts/lazyl.js"></script>
 </body>
 </html>

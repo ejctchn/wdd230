@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Kaushan+Script&display=swap');
 
 /* set width of page */
 html
 {
     width: 100%;
-    font-family: Lobster, cursive;
+    font-family: "Kaushan Script", Helvetica, cursive;
     color: white;
     z-index: 0;
     background-color: #3C1518;
@@ -122,7 +122,7 @@ a:hover
 /* for opening the menu */
 .responsive
 {
-    background-color: rgb(219,182,143,0.7);
+    background-color: #BB7E5D;
     position: absolute;
     grid-column: 1/4;
     grid-row: 1/2;
@@ -147,6 +147,7 @@ main
     margin: auto;
     padding-bottom: 1em;
     max-width: 490px;
+    font-family: "Kalam", sans-serif;
 }
 main img
 {
@@ -169,10 +170,6 @@ main a
 main a:hover
 {
     background-color: rgb(0,0,0,0);
-}
-p
-{
-    font-family: "Kaushan Script", Helvetica, cursive;
 }
 img
 {
@@ -254,7 +251,7 @@ section h2
     border-radius: 1em;
     height: 150px;
     width: 420px;
-    padding-left: 1rem;
+    padding-left: 1em;
     text-align: center;
 }
 #weather h2
@@ -284,13 +281,14 @@ section h2
 {
     grid-row: 1/2;
     grid-column: 2/3;
-    width: 50px;
+    width: 70px;
     display: inline;
     font-size: 1.5em;
+    align-self: center;
 }
 #windspeed
 {
-    width: 150px;
+    width: 160px;
     font-size: 1.2em;
     padding: 0.5em;
     justify-self: right;
@@ -317,7 +315,7 @@ section h2
     position: absolute;
     justify-self: center;
     padding: 3em;
-    top: 30px;
+    top: 20px;
     font-size: 1.2em;
 }
 .spotl
@@ -475,19 +473,21 @@ footer a:hover
     text-align: center;
     padding: 0.5em;
     width: 100%;
-    font-family: "Kaushan Script", Helvetica, cursive;
+    font-family: "Kalam", sans-serif;
 }
 #join-h2, .join_boxes
 {
     padding: 1em;
-    max-width: 450px;
+    width: 450px;
     grid-column: 1/4;
-    width: 500px;
 }
 .join_boxes
 {
     justify-items: right;
-    
+}
+#membership_choice
+{
+    margin-top: -5em;
 }
 table
 {
@@ -514,6 +514,12 @@ tr:nth-child(even)
 {
     margin: 0.5em;
     cursor: pointer;
+}
+/* Thank you */
+.thankyou-contact a
+{
+    position: static;
+    text-decoration: underline;
 }
 
 /* directory */
@@ -558,6 +564,8 @@ tr:nth-child(even)
     width: 200px;
     padding: 10px;
     display: grid;
+    font-family: "Kalam", sans-serif;
+    font-size: medium;
 }
 .cards img
 {
@@ -593,6 +601,8 @@ tr:nth-child(even)
     justify-self: center;
     width: 300px;
     padding: 1em;
+    font-family: "Kalam", sans-serif;
+    font-size: large;
 }
 .listFilter img
 {
@@ -601,4 +611,21 @@ tr:nth-child(even)
 .listFilter .businessName
 {
     display: block;
+}
+/* Contact */
+.q_h2
+{
+    text-align: center;
+}
+.q_boxes > *
+{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+}
+.q_boxes button
+{
+    margin: 1em;
+    cursor: pointer;
 }
