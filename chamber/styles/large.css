@@ -246,6 +246,7 @@
         height: 200px;
         width: 600px;
         padding: .5em;
+        margin-top: 0.1em;
     }
     #news div
     {
