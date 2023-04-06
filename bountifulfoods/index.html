@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<header>
+    <img src="images/logo.png" alt="Bountiful Foods logo" width="100">
+    <h1>Bountiful Foods</h1>
+    <nav class="navigation">
+        <ul>
+            <li><a id="toggleButton" href="#" onclick="toggleMenu()">&#9776;</a></li>
+            <li><a id="active" href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <ul class="social">
+        <li>
+            <a href="facebook.com">
+                <img src="images/facebook.png" alt="Facebook logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="instagram.com">
+                <img src="images/instagram.png" alt="Instagram logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="twitter.com">
+                <img src="images/twitter.png" alt="Twitter logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="mailto:info@bfoods.com">
+                <img src="images/email.png" alt="Email logo" width="40px">
+            </a>
+        </li>
+    </ul>
+</header>
+<body>
+    <main>
+        <section id="hero-box">
+            <h1>Made-to-Order Drinks and Fruit Bags!</h1>
+            <button><a href="fresh.html">Make Your Own Drinks Now</a></button>
+            <img src="images/strawberry.jpg" alt="Hero Image" width="100%">
+        </section>
+        <section id="weather-box">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/33d16n117d35/carlsbad/?unit=us" data-label_1="CARLSBAD" data-label_2="WEATHER" data-days="3" data-theme="original" data-basecolor="#710803" data-accent="rgba(255, 255, 255, 0.09)">CARLSBAD WEATHER</a>
+        </section>
+        <section class="order-box">
+            <h2>Drinks Ordered</h2>
+            <p id="order-count"></p>
+        </section>
+        <section id="coast-info">
+            <h2>Coastal Information - Santa Barbara</h2>
+            <p>
+                Santa Barbara is known as The American Riviera® thanks to its Spanish Colonial Revival architecture, 
+                rich heritage, world-renowned food and wine scene, stunning natural beauty and near-perfect weather.
+            </p>
+        </section>
+    </main>
+</body>
+<footer>
+    <img src="images/logo.png" alt="Bountiful Foods logo" width="200">
+    <span id="contact-info">
+        <a id="address" href="https://goo.gl/maps/YBV1jpAatvcka7g8A">6600 Hidden Valley Rd</a>
+        <p>P.O Box 123</p>
+        <p>Carlsbad, CA 92011</p>
+        <a id="phone-link" href="tel:760-444-4444">760-444-4444</a>
+    </span>
+    <nav>
+        <a id="active" href="index.html">Home</a>
+        <a href="fresh.html">Fresh</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <ul class="social">
+        <li>
+            <a href="facebook.com">
+                <img src="images/facebook.png" alt="Facebook logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="instagram.com">
+                <img src="images/instagram.png" alt="Instagram logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="twitter.com">
+                <img src="images/twitter.png" alt="Twitter logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="mailto:info@bfoods.com">
+                <img src="images/email.png" alt="Email logo" width="40px">
+            </a>
+        </li>
+    </ul>
+    <div id="more_info">
+        <p id="copyr"></p>
+        <p id="project">WDD 230 Final Project</p>
+        <p id="updated"></p>
+    </div>
+</footer>
+<script src="scripts/weather.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/footer.js"></script>
+<script src="scripts/orders.js"></script>
+</html>

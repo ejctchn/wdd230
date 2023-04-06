@@ -1,0 +1,80 @@
+@media only screen and (min-width: 47em)
+{
+    html
+    {
+        width: 700px;
+    }
+    header h1
+    {
+        grid-column: 2/4;
+    }
+
+    /* Main*/
+    main
+    {
+        height: auto;
+        
+    }
+    main h2
+    {
+        font-size: x-large;
+    }
+    #hero-box
+    { 
+        height: 500px;
+        grid-row: 1/5;
+    }
+    #hero-box img
+    {
+        width: 650px;
+        height: auto;
+    }
+    #hero-box button a
+    {
+        align-items: center;
+        width: 400px;
+        height: 45px;
+    }
+    #weather-box
+    {
+        height: auto;
+        grid-row: 5/6;
+        align-self: center;
+    }
+    #coast-info
+    {
+        grid-row: 6/8;
+    }
+    .order-box
+    {
+        margin: 2em;
+    }
+
+    /* Footer */
+    footer img
+    {
+        grid-column: 2/3;
+    }
+    #contact-info
+    {
+        margin: 0;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    footer .social
+    {
+        display: grid;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    footer nav
+    {
+        grid-row: 2/3;
+        padding: 1em;
+    }
+}

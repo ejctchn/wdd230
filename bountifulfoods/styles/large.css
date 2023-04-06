@@ -1,0 +1,129 @@
+@media only screen and (min-width: 80em)
+{
+    html
+    {
+        width: 1200px;
+    }
+
+    /* Header */
+    header h1
+    {
+        grid-column: 1/3;
+        grid-row: 1;
+        justify-self: center;
+    }
+    header img
+    {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .navigation
+    {
+        grid-column: 2/5;
+        grid-row: 1;
+        text-align: center;
+        align-self: center;
+    }
+    .navigation ul li:first-child
+    {
+        display: none;
+    }
+    .navigation ul li
+    {
+        display: inline;
+    }
+    header .social
+    {
+        grid-column: 4/5;
+        grid-row: 1;
+        list-style: none;
+        display: grid;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 200px;
+        justify-self: right;
+    }
+    header .social a
+    {
+        display: flex   ;
+        transition: transform 0.2s;
+    }
+    header .social a:hover
+    {
+        transform: scale(1.3);
+        background-color: #710803;
+    }
+    /* Main */
+    .order-box
+    {
+        grid-column: 3/4;
+        grid-row: 1/4;
+        justify-self: right;
+        height: 200px;
+        width: 200px;
+    }
+    #hero-box button
+    {
+        width: auto;
+    }
+    /* Footer */
+    #contact-info > *
+    {
+        padding-top: 15px;
+    }
+    footer .social
+    {
+        justify-self: right;
+    }
+
+    /* Fresh */
+    .order-page
+    {
+        grid-column: 1/3;
+        grid-row: 1/6;
+    }
+    .order-page-box
+    {
+        z-index: 1;
+        grid-column: 1/3;
+        grid-row: 7;
+        max-height: 115px;
+        align-self: end;
+    }
+    #userinfo
+    {
+        grid-column: 3/4;
+        grid-row: 1/3;
+        text-align: center;
+        line-height: 30px;
+    }
+    #details
+    {
+        grid-column: 3/4;
+        grid-row: 3/8;
+        line-height: 30px;
+    }
+    #totals
+    {
+        grid-column: 1/3;
+        grid-row: 6/8;
+    }
+
+    /* About */
+    #hist_info
+    {
+        grid-column: 1;
+        grid-row: 1/8;
+    }
+    #cont_info
+    {
+        grid-column: 3;
+        grid-row: 1/8;
+    }
+    #map
+    {
+        grid-column: 2;
+        grid-row: 1/8;
+    }
+}

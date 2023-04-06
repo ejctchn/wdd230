@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Kalam&display=swap');
+
+html
+{
+    font-family: "Delicous Handrawn", cursive;
+    color: white;
+    width: 480px;
+    margin: auto;
+    background-color: #710803;
+}
+#active
+{
+    background-color: #B19676;
+    border-radius: 0.5em;
+}
+header
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1em;
+}
+header h1
+{
+    align-self: center;
+    padding-left: 0.5em;
+}
+header .social
+{
+    display: none;
+}
+header img
+{
+    align-self: center;
+}
+
+/* Menu */
+.navigation
+{
+    grid-column: 4/5;
+    font-size: 1.5em;
+}
+.navigation ul
+{
+    list-style-type: none;
+}
+.navigation li
+{
+    display: none;
+    transition: transform 0.2s;
+}
+.navigation li:first-child
+{
+    display: block;
+}
+.navigation li:hover
+{
+    transform: scale(1.1);
+}
+
+/* Responsive Menu */
+.responsive
+{
+    background-color: #710803;
+    position: static;
+    grid-column: 1/5;
+    grid-row: 1/3;
+    z-index: 3;
+    width: 100%;
+}
+.responsive li
+{
+    display: block;
+    padding: .5em;
+    text-align: center;
+    margin-top: 4em;
+}
+.navigation li:first-child
+{
+    margin: 0;
+    text-align: right;
+}
+
+/* Main */
+a
+{
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+a:hover
+{
+    background-color: #C7C021;
+    color: #710803;
+    border-radius: 0.5em;
+}
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    background-color: #B19676; 
+    padding: 1em;
+    height: auto;
+}
+main h2
+{
+    font-size: large;
+    text-align: center;
+}
+img
+{
+    border-radius: 1em;
+}
+#hero-box
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    height: 350px;
+}
+#hero-box img
+{
+    position: absolute;
+    opacity: 0.6;
+    width: 450px;
+    justify-self: center;
+}
+#hero-box h1
+{
+    z-index: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    font-size: 1.8em;
+    grid-row: 1/3;
+}
+#hero-box button
+{
+    color: white;
+    background-color: #710803;
+    grid-row: 5;
+    z-index: 1;
+    width: 60%;
+    height: 50%;
+    justify-self: center;
+    opacity: 0.9;
+    transition: transform .2s;
+}
+#hero-box button:hover
+{
+    transform: scale(1.1);
+}
+#hero-box button a
+{
+    display: flex;
+    padding: 0;
+    margin-left: -8px;
+    background-color: transparent;
+    width: 270px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+#hero-box button a:hover
+{
+    transform: scale(1.1);
+    color: white;
+}
+button:hover
+{
+    cursor: pointer;
+}
+#weather-box
+{
+    grid-column: 1/4;
+    grid-row: 4/6;
+    text-align: center;
+    margin: 0.5em;
+    border-radius: 0.5em;
+}
+#weather-box a
+{
+    border-radius: 0.5em;
+}
+.order-box
+{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    align-self: center;
+    background-color: #710803;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    opacity: 0.8;
+}
+#coast-info
+{
+    grid-column: 1/4;
+    grid-row: 6/8;
+    height: auto;
+    background-color: #710803;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    text-align: center;
+}
+#coast-info p
+{
+    margin: 1em;
+}
+
+/* Footer */
+footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #710803;
+    padding: 1em;
+}
+footer .social
+{
+    list-style-type: none;
+}
+footer img
+{
+    grid-column: 1/4;
+    justify-self: center;
+}
+footer nav
+{
+    grid-column: 1/4;
+    text-align: center;
+    margin: 1em;
+    transition: transform .2s;
+}
+footer nav:hover
+{
+    transform: scale(1.1);
+}
+footer .social
+{
+    margin-left: -3em;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+}
+footer .social a
+{
+    display: flex;
+    transition: transform 0.2s;
+}
+footer .social a:hover
+{
+    transform: scale(1.3);
+    background-color: #710803;
+}
+#contact-info
+{
+    grid-column: 1/4;
+    text-align: center;
+    border-style: double;
+    border-color: #B19676;
+    padding: 1em;
+    margin: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    border-radius: 0.5em;
+    transition: transform 0.2s;
+    line-height: 30px;
+}
+#contact-info:hover
+{
+    transform: scale(1.05);
+}
+#more_info
+{
+    grid-column: 1/4;
+    text-align: center;
+    border-style: double;
+    border-radius: 0.5em;
+    border-color: #B19676;
+}
+
+/* Fresh */
+.order-page
+{
+    background-color: #710803;
+    grid-column: 1/4;
+    grid-row: 1/7;
+    text-align: center;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+.order-page h2
+{
+    font-size: x-large;
+}
+.order-page form
+{
+    padding-top: 1em;
+    border-style: double;
+    border-color: #B19676;
+    margin: 0.5em;
+}
+.order-page form > *
+{
+    font-size: x-large;
+    margin: auto;
+    display: block;
+    height: 40px;
+}
+.order-page form input
+{
+    color: white;
+    text-align: center;
+    background-color: #B19676;
+}
+.order-page form select
+{
+    background-color: #B19676;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+.order-page form button
+{
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #B19676;
+    color: white;
+}
+#time
+{
+    margin-bottom: 1em;
+}
+.order-page-box
+{
+    grid-column: 1/4;
+    grid-row: 7/8;
+    background-color: #710803;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+#order-count
+{
+    text-align: center;
+    font-size: x-large;
+}
+#details
+{
+    grid-column: 1/4;
+    text-align: center;
+    background-color: #710803;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+#lastorder
+{
+    background-color: #710803;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: x-large;
+    grid-column: 1/4;
+}
+#userinfo
+{
+    grid-column: 1/4;
+    background-color: #710803;
+    border-radius: 0.5em;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+#totals
+{
+    grid-column: 1/4;
+    background-color: #710803;
+    border-radius: 0.5em;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+/* About */
+#hist_info
+{
+    background-color: #710803;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    text-align: center;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    line-height: 30px;
+}
+#cont_info
+{
+    background-color: #710803;
+    grid-column: 1/4;
+    grid-row: 3/5;
+    text-align: center;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    line-height: 30px;
+}
+#map
+{
+    background-color: #710803;
+    grid-column: 1/4;
+    grid-row: 5/8;
+    text-align: center;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<header>
+    <img src="images/logo.png" alt="Bountiful Foods logo" width="100">
+    <h1>Bountiful Foods</h1>
+    <nav class="navigation">
+        <ul>
+            <li><a id="toggleButton" href="#" onclick="toggleMenu()">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a id="active" href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <ul class="social">
+        <li>
+            <a href="facebook.com">
+                <img src="images/facebook.png" alt="Facebook logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="instagram.com">
+                <img src="images/instagram.png" alt="Instagram logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="twitter.com">
+                <img src="images/twitter.png" alt="Twitter logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="mailto:info@bfoods.com">
+                <img src="images/email.png" alt="Email logo" width="40px">
+            </a>
+        </li>
+    </ul>
+</header>
+<body>
+    <main>
+        <section class="order-page">
+            <h2>Make Your Own Drinks Below!</h2>
+            <h2>Or call 760-444-4444 to place an order!</h2>
+            <form>
+                <!-- Choose what time to pick up order -->
+                <label for="name">First Name *</label>
+                <input type="text" id="name">
+
+                <!-- Pickup location -->
+                <label for="email">Email *</label>
+                <input type="text" id="email" >
+ 
+                <label for="phone">Phone Number *</label>
+                <input type="text" id="phone"  >
+
+                <!-- Bag or Drink -->
+                <label for="flavor1_choice">Flavor 1:</label>
+                <select name="flavor1" id="flavor1_choice">
+                    <option>--Choose a Flavor--</option>
+                </select>
+             
+                <label for="flavor2_choice">Flavor 2:</label>
+                <select name="flavor2" id="flavor2_choice">
+                    <option>--Choose a Flavor--</option>
+                </select>
+
+                <label for="flavor3_choice">Flavor 3 :</label>
+                <select name="flavor3" id="flavor3_choice">
+                    <option>--Choose a Flavor--</option>
+                </select>
+
+                <label for="si">Special Instructions</label>
+                <input type="text" id="si">
+
+                <!-- Submit the order -->
+                <button type="submit" onclick="orderSomething()">Place Order</button>
+            </form>
+        </section>
+        <section class="order-page-box">
+            <h2>Drinks Ordered</h2>
+            <p id="order-count"></p>
+        </section>
+        <div id="userinfo">Last Order by: </div>
+        <div id="details"></div>
+        <div id="totals">Totals:</div>
+    </main>
+</body>
+<footer>
+    <img src="images/logo.png" alt="Bountiful Foods logo" width="200">
+    <span id="contact-info">
+        <a id="address" href="https://goo.gl/maps/YBV1jpAatvcka7g8A">6600 Hidden Valley Rd</a>
+        <p>P.O Box 123</p>
+        <p>Carlsbad, CA 92011</p>
+        <a id="phone-link" href="tel:760-444-4444">760-444-4444</a>
+    </span>
+    <nav>
+        <a href="index.html">Home</a>
+        <a id="active" href="fresh.html">Fresh</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <ul class="social">
+        <li>
+            <a href="facebook.com">
+                <img src="images/facebook.png" alt="Facebook logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="instagram.com">
+                <img src="images/instagram.png" alt="Instagram logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="twitter.com">
+                <img src="images/twitter.png" alt="Twitter logo" width="40px">
+            </a>
+        </li>
+        <li>
+            <a href="mailto:info@bfoods.com">
+                <img src="images/email.png" alt="Email logo" width="40px">
+            </a>
+        </li>
+    </ul>
+    <div id="more_info">
+        <p id="copyr"></p>
+        <p id="project">WDD 230 Final Project</p>
+        <p id="updated"></p>
+    </div>
+</footer>
+<script src="scripts/weather.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/footer.js"></script>
+<!--<script src="scripts/orders.js"></script>-->
+<script src="scripts/temporder.js"></script>
+</html>
